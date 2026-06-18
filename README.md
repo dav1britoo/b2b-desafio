@@ -50,11 +50,14 @@ python main.py
 
 ## Exemplo de saída
 
+Output real obtido durante a execução do projeto:
+
 ```
-2026-06-17 10:00:00 [INFO] Buscando contatos no Supabase...
-2026-06-17 10:00:01 [INFO] 3 contato(s) encontrado(s). Iniciando envios...
-2026-06-17 10:00:02 [INFO] Mensagem enviada para Maria (5511999990001). Resposta: {'zaapId': '...'}
-2026-06-17 10:00:03 [INFO] Mensagem enviada para João (5511999990002). Resposta: {'zaapId': '...'}
-2026-06-17 10:00:04 [INFO] Mensagem enviada para Ana (5511999990003). Resposta: {'zaapId': '...'}
-2026-06-17 10:00:04 [INFO] Envios concluídos.
+2026-06-18 15:11:11,265 [INFO] Buscando contatos no Supabase...
+2026-06-18 15:11:12,320 [INFO] HTTP Request: GET .../rest/v1/contacts?select=name%2Cphone&limit=3 "HTTP/2 200 OK"
+2026-06-18 15:11:12,327 [INFO] 3 contato(s) encontrado(s). Iniciando envios...
+2026-06-18 15:11:12,532 [INFO] Mensagem enviada para Maria (5511999990001). Resposta: {'zaapId': '019EDBEE...', 'messageId': '3EB033...'}
+2026-06-18 15:11:12,714 [INFO] Mensagem enviada para João (5511999990002). Resposta: {'zaapId': '019EDBEE...', 'messageId': '3EB0B8...'}
+2026-06-18 15:11:12,899 [INFO] Mensagem enviada para Ana (5511999990003). Resposta: {'zaapId': '019EDBEE...', 'messageId': '3EB0B5...'}
+2026-06-18 15:11:12,899 [INFO] Envios concluídos.
 ```
